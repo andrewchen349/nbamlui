@@ -3,8 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/main.css') }}">
   </head>
   <body>
-    <p> Home </p>
+    <!-- Search Bar For Players -->
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">
+        <p>Search</p>>
+      </button>
+    </form>
+    
+    <div>
+      <p>Model</p>
+    </div>
   </body>
 </html>
